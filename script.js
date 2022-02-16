@@ -10,7 +10,13 @@ function addTasks() {
 }
 buttonAdd.addEventListener('click', addTasks);
 
-
-
-
-
+function selectGray(event) {
+  const tasks = document.querySelectorAll('li');
+  for (let index = 0; index < tasks.length; index += 1) {
+    if (tasks[index].style.backgroundColor === 'gray') {
+      tasks[index].style.backgroundColor = 'white';
+    } 
+  }
+  event.target.style.backgroundColor = 'gray';
+}
+listTasks.addEventListener('click', selectGray);
