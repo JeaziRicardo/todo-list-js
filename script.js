@@ -3,6 +3,8 @@ const buttonAdd = document.querySelector('#criar-tarefa');
 const input = document.querySelector('#texto-tarefa');
 const clearButton = document.querySelector('#apaga-tudo');
 const completedButton = document.querySelector('#remover-finalizados');
+const saveButton = document.querySelector('#salvar-tarefas');
+const list = document.getElementsByTagName('ol')[0];
 
 function addTasks() {
   const task = document.createElement('li');
@@ -51,3 +53,12 @@ function clearCompleted() {
 }
 clearCompleted();
 
+function saveList() {
+  localStorage.setItem('listTasks', list.innerHTML);
+}
+saveButton.addEventListener('click', saveList);
+
+window.onload = () => {
+  const storageSave = localStorage.getItem('listTasks');
+  list.innerHTML = storageSave;
+}
