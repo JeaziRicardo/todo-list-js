@@ -7,6 +7,7 @@ const saveButton = document.querySelector('#salvar-tarefas');
 const list = document.getElementsByTagName('ol')[0];
 const buttonUp = document.querySelector('#mover-cima');
 const buttonDown = document.querySelector('#mover-baixo');
+const buttonRemove = document.querySelector('#remover-selecionado');
 
 function addTasks() {
   const task = document.createElement('li');
@@ -65,9 +66,9 @@ window.onload = () => {
   list.innerHTML = storageSave;
 };
 
-// Usei a função 'insertBefore' para fazer às funções upButton e downButton.
+// Usei a função 'insertBefore' para fazer às funções moveUP e moveDown.
 // https://developer.mozilla.org/pt-BR/docs/Web/API/Node/insertBefore
-function upButton() {
+function moveUP() {
   const tasks = document.querySelectorAll('li');
   for (let index = 0; index < tasks.length; index += 1) {
     if (tasks[index] !== tasks[0] && tasks[index].style.backgroundColor === 'gray') {
@@ -75,9 +76,9 @@ function upButton() {
     }
   }
 }
-buttonUp.addEventListener('click', upButton);
+buttonUp.addEventListener('click', moveUP);
 
-function downButton() {
+function moveDown() {
   const tasks = document.querySelectorAll('li');
   for (let index = 0; index < tasks.length; index += 1) {
     if (tasks[index] !== tasks[tasks.length - 1] && tasks[index].style.backgroundColor === 'gray') {
@@ -85,4 +86,4 @@ function downButton() {
     }
   }
 }
-buttonDown.addEventListener('click', downButton);
+buttonDown.addEventListener('click', moveDown);
