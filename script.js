@@ -1,6 +1,7 @@
 const listTasks = document.querySelector('#lista-tarefas');
 const buttonAdd = document.querySelector('#criar-tarefa');
 const input = document.querySelector('#texto-tarefa');
+const clearButton = document.querySelector('#apaga-tudo');
 
 function addTasks() {
   const task = document.createElement('li');
@@ -29,3 +30,10 @@ function doubleClick(event) {
   }
 }
 listTasks.addEventListener('dblclick', doubleClick);
+
+function clearList() {
+  clearButton.addEventListener('click', () => {
+    listTasks.innerHTML = '';
+  });
+}
+clearList();
