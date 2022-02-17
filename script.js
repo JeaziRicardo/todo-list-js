@@ -87,3 +87,13 @@ function moveDown() {
   }
 }
 buttonDown.addEventListener('click', moveDown);
+
+function removeSelected() {
+  const tasks = document.querySelectorAll('li');
+  for (let index = 0; index < tasks.length; index += 1) {
+    if (tasks[index].style.backgroundColor === 'gray') {
+      tasks[index].remove();
+    }
+  }
+}
+buttonRemove.addEventListener('click', removeSelected);
