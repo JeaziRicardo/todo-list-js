@@ -4,7 +4,7 @@
 
 <details>
 
-A primeira **ToDo List** a gente nunca esquece, esse projeto foi executado como requisito obrigatório do curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/). Foi um do primeiros projetos realizados do módulo de fundamentos, onde precisávamos implementar um aplicação que permitisse a quem o utilizar criar listas de tarefas. Essa pessoa deve ser capaz de adicionar uma quantidade arbitrária de itens, podendo clicar uma vez para selecionar um item, ou clicar duas vezes para marcá-lo como completo, e pode clicar duas vezes novamente para desmarcá-lo. A lista deve ser ordenada pela ordem de criação, ou seja, um novo item deve ser inserido ao final da lista.
+A primeira **ToDo List** a gente nunca esquece, esse projeto foi executado como requisito obrigatório do curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/). Foi um dos primeiros projetos realizados do módulo de fundamentos, onde precisávamos implementar um aplicação que permitisse a quem o utilizar criar listas de tarefas. Essa pessoa deve ser capaz de adicionar uma quantidade arbitrária de itens, podendo clicar uma vez para selecionar um item, ou clicar duas vezes para marcá-lo como completo, e pode clicar duas vezes novamente para desmarcá-lo. A lista deve ser ordenada pela ordem de criação, ou seja, um novo item deve ser inserido ao final da lista.
 
 > :eyes: Observação: nesse momento do curso ainda não era cobrado o uso do `StyleLint`, por esse motivo existem erros de estrutura do CSS. Eu optei por deixar assim para verificar minha evolução quando comparado com outros projetos.
 
